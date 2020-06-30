@@ -1,0 +1,11 @@
+{% extends "BlogApp/base2.html" %}
+{% block content %}
+
+
+<h2> this is the result of the search</h2>
+{% for post in queryset %}
+<a href="{{ post.get_absolute_url }}">{{ post.title  }}</a>
+
+{% endfor %}
+{% endblock %}
+ 
